@@ -285,7 +285,7 @@ input {
   header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-grow: 2;
     width: 100vw;
   }
@@ -331,5 +331,6 @@ input {
   .menuico.show {
     transform: rotate(90deg);
     background-color: #095c71;
+    position: relative;
   }
 }
