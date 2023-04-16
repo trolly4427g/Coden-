@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style menu.css">
+    <link rel="shortcut icon" href="/img/Coden_free-file.png" type="image/x-icon">
+    <title>registro - Coden </title>
+    <!-- <link rel="stylesheet" href="menu.css"> -->
+</head>
+<body>
+    <header>
+        <h1>Coden.#</h1>
+        <nav>
+            <ul class="nav__link">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Servicios/servicios.html">Servicios</a></li>
+                <li><a href="../nosotros/nosotros.html">Sobre nosotros</a></li>
+            </ul>       
+        </nav>
+        <a href="../Contacto/Contacto.html"><button>Contact</button></a>
+        <a href=""><button>Inicia Sesion o Registrate</button></a>
+    </header>
+    <div class="contenedor">
+        <h2 class="titulo__logo"><img src="../img/Coden_free-file.png" alt="Coden.#" class="logo_menu"></h2>
+        <form action="menu.php"method="POST" id="form">
+            <h2 class="title__registro">Registro</h2>
+            <div class="grupo"><label for="">Nombre</label>
+                <input type="Nombre" name="Nombre" id="" required><span class="barra"></span>
+                
+            </div>
+            <div class="grupo">
+            <label for="">Apellido</label>
+                <input type="Apellido" name="Apellido" id="" required><span class="barra"></span>
+                
+            </div>
+            <div class="grupo"><label for="">Correo</label>
+                <input type="email" name="Correo" id="@gmail.com" required><span class="barra"></span>
+                
+            </div>
+            <div class="grupo"> <label for="">Contraseña</label>
+                <input type="password" name="contrasena" id="password" required><span class="barra"></span>
+               
+            </div>
+            <!-- <div class="grupo">    <label for="">Confirma</label>
+                <input type="password" name="contrasena" id="password" required><span class="barra"></span>
+            
+            </div> -->
+                    <button type="submit" name="register" class="suscribirse">Suscribirte</button>
+        </form>
+    </div>
+      <?php
+      include("menu.php")
+      ?>
+</body>
+</html>

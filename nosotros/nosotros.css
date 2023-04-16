@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Quicksand:wght@500 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Explora & display=swap');
+*{
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+li, a, button{
+    font-family: 'Finlandica', sans-serif;
+    font-weight: 500; 
+    font-size: 1em;
+    color: #FFFF;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background-color: #24252A;
+}
+
+h1{
+color: #FFFF;
+font-family: 'Finlandica', sans-serif;
+text-shadow: 2px 1px 4px #0088a9;
+}
+
+.nav__link{
+list-style: none;
+}
+
+.nav__link li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__link{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__link li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,136,169,8);
+}
+/*--Container__Principal--*/
+.principal{
+    display: flex;
+    justify-content: space-around;
+}
+.user_admin{
+    background-color: rgba(255, 255, 255, 0); 
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px;
+    border-radius: 0;
+}
+.img_user{
+    width: 150px;
+    background-color: #0088a9;
+    border-radius: 100px;    
+}
+.nombre_user{
+   color: white;
+   font-family: 'Staatliches', cursive;
+   font-size: 40px;
+   text-shadow: 2px 2px #0088a9;
+    
+}
+
+.description{
+    border-style: solid;
+    border-color: #0088a9;
+    border-width: 4px;
+    color: white;
+    background-color: #24252A;
+    font-size: 20px;
+    font-family: 'Explora', cursive;
+}
+/* OBJETIVO DE LA PAGINA */
+.page_obj{
+display: flex;
+align-items: center;
+flex-flow: column wrap;
+
+}
+
+.text_obj{
+    text-align: center;
+}
