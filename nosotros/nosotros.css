@@ -10,12 +10,13 @@
 
 body{
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 li, a, button{
     font-family: 'Finlandica', sans-serif;
-    font-weight: 500; 
-    font-size: 1em;
+    font-weight: 500; font-size: 1em;
     color: #FFFF;
     text-decoration: none;
 }
@@ -24,7 +25,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 10%;
+    padding: 20px 10%;
     background-color: #24252A;
 }
 
@@ -40,7 +41,7 @@ list-style: none;
 
 .nav__link li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 100px;
 }
 
 .nav__link{
@@ -96,6 +97,10 @@ button:hover{
     background-color: #24252A;
     font-size: 20px;
     font-family: 'Explora', cursive;
+
+}
+.objectiv{
+    width: 50%;
 }
 /* OBJETIVO DE LA PAGINA */
 .page_obj{
