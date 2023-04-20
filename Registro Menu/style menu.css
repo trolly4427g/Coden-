@@ -110,3 +110,35 @@ div input{
     margin: 25px 47%;
     
 }
+.grupo1{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+.izquierda{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+    
+}
+.termino{
+    margin-left: 50px;
+    transition: all .4s ease;
+    font-size: 1em;
+    
+}
+.termino:hover{
+    text-shadow: #0088a9 1px 1px 5px;
+    font-size: 1.4em;
+}
+#politica{
+ padding: 10px;    
+ cursor: pointer;
+transform: scale(1.5);
+transition: all 1s ease;
+}
+#politica:hover{
+    transform: scale(2.4);
+    color: #0088a9;
+}

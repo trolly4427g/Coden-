@@ -31,14 +31,15 @@ header {
   padding: 20px 10%;
   background-color: #24252a;
   margin-top: 0;
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
 }
 
 h1 {
   color: #ffff;
   font-family: "Finlandica", sans-serif;
   text-shadow: 2px 1px 4px #0088a9;
+  margin-right: 10%;
 }
 .orden,
 .abso {
@@ -52,9 +53,10 @@ h1 {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   width: 100%;
+  margin-right: 6em;
   flex-wrap: wrap;
 }
 
@@ -77,7 +79,7 @@ button {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  margin-left: 5px;
+  margin-left: 2em;
 }
 
 button:hover {
@@ -235,6 +237,7 @@ input {
   font-size: 15px;
   transition: text-shadow 2s ease, font-size 0.4s ease-in;
   justify-content: left;
+  margin: 0;
 }
 .cambio:hover {
   font-size: 20px;
@@ -256,39 +259,7 @@ input {
   width: 100%;
 }
 
-@media only screen and (max-width: 415px) {
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .nav__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  h1 {
-    display: flex;
-    justify-content: left;
-  }
-  .pos_inscrito {
-    max-width: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    margin-top: 10px;
-  }
-  .inscrito {
-    font-size: 30px;
-    width: 40px;
-    padding: 1em 6.9em;
-    display: flex;
-    justify-content: center;
-  }
-  .inscrito:hover {
-    font-size: 40px;
-  }
-}
+
 
 @media only screen and (max-width: 700px) and (max-height: 850px) {
   header {
@@ -395,9 +366,7 @@ input {
   .mostrar.menu > a {
     transition: none;
   }
-  .container{
+  .container {
     display: none;
-}
-
-
+  }
 }
