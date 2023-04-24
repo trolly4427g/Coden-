@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+li,
+a,
+button {
+  font-family: "Finlandica", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #ffff;
+  text-decoration: none;
+  flex: 3;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #24252a;
+  margin-top: 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+h1 {
+  color: #ffff;
+  font-family: "Finlandica", sans-serif;
+  text-shadow: 2px 1px 4px #0088a9;
+}
+.orden,
+.abso {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+}
+.nav__link {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-right: 6em;
+}
+
+.nav__link li {
+  padding: 0px 50px;
+}
+
+.nav__link {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__link li a:hover {
+  color: #0088a9;
+}
+
+button {
+  padding: 0.5em 1.5em;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 2em;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 8);
+}
+/*--Container__Principal--*/
+.titulo {
+  flex: 4;
+}
+.menuico {
+  display: none;
+}
+/* <------FORMULARIO------> */
+
+.inicio {
+  text-align: center;
+  margin: 50px;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  background: rgb(7, 5, 49);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(1, 99, 133, 1) 100%,
+    rgba(1, 92, 126, 1) 100%,
+    rgba(0, 135, 168, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 10px;
+  border: #24252a 5px solid;
+}
+form {
+  text-align: center;
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  width: 50%;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 1000px) {
+  form {
+    width: 100%;
+  }
+}
+label {
+  font-size: 25px;
+  padding: 10px;
+  text-shadow: #000000 2px 2px 12px;
+}
+.tamano {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+.user {
+  width: 50px;
+  display: inline;
+  margin-right: 10px;
+}
+input {
+  width: 100%;
+}
+
+.correo,
+.contrasena,
+#enviar {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Josefin Sans";
+  outline: none;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 13px;
+}
+#enviar {
+  font-size: 14px;
+  font-family: "Josefin Sans";
+  outline: none;
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+#enviar:hover {
+  background-color: #24252a;
+  color: #0088a9;
+  font-size: 25px;
+  transition: all 1000ms ease;
+}
+.error {
+  background-color: rgba(179, 30, 30, 0.521);
+  color: white;
+  padding: 50px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: #000000 1px 1px 1px;
+  margin-top: 2rem;
+  display: block;
+  width: 100%;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.error.aumenta {
+  opacity: 1;
+  transform: scale(1);
+}
+.inscrito.crece {
+  opacity: 1;
+  transform: scale(1);
+}
+.pos_inscrito {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10em;
+}
+.inscrito:hover {
+  font-size: 4em;
+}
+.inscrito {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  background-color: #0088a9;
+  align-items: center;
+  align-self: center;
+  padding: 1em 9em;
+  font-family: "Bebas Neue", cursive;
+  text-shadow: black 2px 3px 8px;
+  transition: font-size 3s ease;
+  border: solid #24252a 1px;
+  outline: solid white 2px;
+}
+
+.falla {
+  margin-top: 0%;
+  top: 0;
+  border-top: 0;
+}
+.cambio {
+  display: flex;
+  background-color: #24252a;
+  color: white;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 15px;
+  transition: text-shadow 2s ease, font-size 0.4s ease-in;
+  justify-content: left;
+}
+.cambio:hover {
+  font-size: 20px;
+  text-shadow: #000000 2px 2px 2px;
+  background-color: #24252a;
+}
+.tiburon {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  transition: height 3s ease;
+}
+.tiburon:hover {
+  height: 400px;
+}
+.tiburonsin {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

@@ -19,62 +19,66 @@ include("dbconnect.php");
             if($datos=$sql->fetch_object()){
            
                 ?>
-                <link rel="stylesheet" href="CSS/inicio.css">
-                <body class="falla">
-                <header>
-    <h1>Coden#</h1>
-    <nav>
-     <ul class="nav__link">
-       <li><a href="../index.html">Inicio</a></li>
-       <li><a href="../Servicios/servicios.html">Servicios</a></li>
-       <li><a href="../nosotros/nosotros.html">Sobre nosotros</a></li>
-   </ul>      
-   </nav>
-   <a href="../Contacto/Contacto.html"><button>Contact</button></a>
-  <?php  echo '<a href="##"><button class="cambio">' . $user_result->Nombre  . " ".  $user_result->Apellido. '</button></a>';?>
+<link rel="stylesheet" href="CSS/login.css">
 
-   </header>
-   <div class="pos_inscrito">
-     <h3 class="inscrito">Has iniciado sesion</h3>
-     <div class="tiburonsin">
-     <img src="img/tiburon.gif" alt="404 image" srcset="" class="tiburon">
-     </div>
-  
-</div>
-  <script src="js/node.js"></script>
-              
-                </body>
-                 
-
-
-        <?php  
-         }else{
-            ?>
-               <header>
-        <h1>Coden.#</h1>
+<body class="falla">
+    <header>
+        <h1>Coden#</h1>
         <nav>
             <ul class="nav__link">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../Servicios/servicios.html">Servicios</a></li>
                 <li><a href="../nosotros/nosotros.html">Sobre nosotros</a></li>
-            </ul>       
+            </ul>
         </nav>
         <a href="../Contacto/Contacto.html"><button>Contact</button></a>
+        <?php  echo '<a href="##"><button class="cambio">' . $user_result->Nombre  . " ".  $user_result->Apellido. '</button></a>';?>
+
     </header>
-    <h1 class="inicio">Inicia Sesion</h1>
-    <section class="tamano">
-           <div class="contenedor">
-    <form action="login.php" method="post">
-        <input type="email" name="Correo" placeholder="Correo"  class="correo" required value="<?php echo isset($_POST['Correo']) ? $_POST['Correo'] : ''; ?>">
-        <input type="password" name="contrasena" id="" placeholder="Contraseña" class="contrasena" required>
-        <button name="enviar" id="enviar" >Iniciar Sesion</button>
-    </form>
-</div>
+    <div class="pos_inscrito">
+        <h3 class="inscrito">Has iniciado sesion</h3>
+        <div class="tiburonsin">
+            <img src="img/tiburon.gif" alt="404 image" srcset="" class="tiburon">
+        </div>
+
+    </div>
+    <script src="js/node.js"></script>
+
+</body>
+
+
+
+<?php  
+         }else{
+            ?>
+<header>
+    <h1>Coden.#</h1>
+    <nav>
+        <ul class="nav__link">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../Servicios/servicios.html">Servicios</a></li>
+            <li><a href="../nosotros/nosotros.html">Sobre nosotros</a></li>
+        </ul>
+    </nav>
+    <a href="../Contacto/Contacto.html"><button>Contact</button></a>
+</header>
+<h1 class="inicio">Inicia Sesion</h1>
+<section class="tamano">
+    <div class="contenedor">
+        <form action="login.php" method="post">
+            <input type="email" name="Correo" placeholder="Correo" class="correo" required
+                value="<?php echo isset($_POST['Correo']) ? $_POST['Correo'] : ''; ?>">
+            <input type="password" name="contrasena" id="" placeholder="Contraseña" class="contrasena" required>
+            <button name="enviar" id="enviar">Iniciar Sesion</button>
+        </form>
+    </div>
 </section>
-    <h2 class="error" > Usuario o Contraseña incorrectos</h2>
-    <script > const agranda= document.querySelector('.error');
-agranda.classList.add('aumenta');</script>
-      <?php  };
+<h2 class="error"> Usuario o Contraseña incorrectos</h2>
+<script>
+const agranda = document.querySelector('.error');
+agranda.classList.add('aumenta');
+</script>
+<?php  };
 
 
       }

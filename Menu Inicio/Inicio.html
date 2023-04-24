@@ -10,31 +10,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="CSS/inicio.css" />
+    <link rel="stylesheet" href="CSS/cascada.css">
     <script
       src="https://kit.fontawesome.com/d2c0460f12.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <div class="container">
+      <div class="bubbles">
+          <span style="--i:11;"></span>
+          <span style="--i:12;"></span>
+          <span style="--i:24;"></span>
+          <span style="--i:10;"></span>
+          <span style="--i:14;"></span>
+          <span style="--i:23;"></span>
+          <span style="--i:18;"></span>
+          <span style="--i:16;"></span>
+          <span style="--i:19;"></span>
+          <span style="--i:20;"></span>
+          <span style="--i:22;"></span>
+          <span style="--i:25;"></span>
+          <span style="--i:18;"></span>
+          <span style="--i:21;"></span>
+          <span style="--i:15;"></span>
+          <span style="--i:13;"></span>
+          <span style="--i:26;"></span>
+          <span style="--i:17;"></span>
+          <span style="--i:13;"></span>
+          <span style="--i:28;"></span>
+      </div>
+  </div>
     <header>
       <script src="js/menu.js"></script>
       <h1 class="titulo">Coden.#</h1>
-      <nav>
-        <ul class="nav__link">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../Servicios/servicios.html">Servicios</a></li>
-          <li><a href="../nosotros/nosotros.html">Sobre nosotros</a></li>
-        </ul>
-      </nav>
-      <a href="../Contacto/Contacto.html">
-        <button>Contact</button>
-      </a>
-      <a href="Menu Inicio/Inicio.html">
-        <button>Inicia Sesion</button>
-      </a>
-      <button class="menuico" onclick="aparece()">
-        <i class="fa-sharp fa-solid fa-caret-down men"></i>
-      </button>
+      <section class="abso">
+        <button class="menuico" onclick="aparece()">
+          <i class="fa-sharp fa-solid fa-caret-down men"></i>
+        </button>
+        <section class="orden">
+          <nav>
+            <ul class="nav__link">
+              <li class="mostrar"><a href="../index.html">Inicio</a></li>
+              <li class="mostrar">
+                <a href="../Servicios/servicios.html">Servicios</a>
+              </li>
+              <li class="mostrar">
+                <a href="../nosotros/nosotros.html">Sobre nosotros</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="../Contacto/Contacto.html">
+            <button class="mostrar ajuste">Contact</button>
+          </a>
+          <a href="Menu Inicio/Inicio.html">
+            <button class="mostrar  ajuste">Inicia Sesion</button>
+          </a>
+        </section>
+      </section>
+    
     </header>
 
     <h1 class="inicio">Inicia Sesion</h1>
@@ -60,5 +94,7 @@
         </form>
       </div>
     </section>
+
+  
   </body>
 </html>
